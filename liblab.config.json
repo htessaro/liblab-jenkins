@@ -1,7 +1,7 @@
 {
   "sdkName": "test-sdk",
   "apiVersion": "1.0.0",
-  "apiName": "test-api",
+  "apiName": "test-api-",
   "specFilePath": "spec.json",
   "languages": [
     "python",
