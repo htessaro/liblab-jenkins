@@ -40,7 +40,7 @@ pipeline {
                 script {
                     sh '''
                     curl -sL https://deb.nodesource.com/setup_20.x | bash -
-                    sudo apt-get install -y nodejs
+                    apt-get install -y nodejs
                     node -v
                     npm -v
                     '''
