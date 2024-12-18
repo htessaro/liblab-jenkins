@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:20' // Use a Docker image with Node.js pre-installed
+        }
+    }
     environment {
         LIBLAB_TOKEN = credentials('LIBLAB_TOKEN')
         REPO_HOST_PLATFORM = 'github'
