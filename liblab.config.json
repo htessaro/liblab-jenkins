@@ -4,8 +4,6 @@
   "apiName": "test-api",
   "specFilePath": "spec.json",
   "languages": [
-    "csharp",
-    "go",
     "python",
     "typescript"
   ],
@@ -22,16 +20,6 @@
       "npmOrg": "",
       "githubRepoName": "",
       "sdkVersion": "1.0.0"
-    },
-    "go": {
-      "goModuleName": "github.com/swagger-api/swagger-petstore",
-      "githubRepoName": "",
-      "sdkVersion": "1.0.0"
-    },
-    "csharp": {
-      "githubRepoName": "",
-      "sdkVersion": "1.0.0",
-      "packageId": "Petstore.SDK"
     }
   },
   "publishing": {
