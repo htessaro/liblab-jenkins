@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'nodejs-agent'
-    }
+    agent any
     environment {
         LIBLAB_TOKEN = credentials('LIBLAB_TOKEN')
         REPO_HOST_PLATFORM = 'github'
