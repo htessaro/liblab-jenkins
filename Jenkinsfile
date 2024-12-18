@@ -2,10 +2,8 @@ pipeline {
     agent any
     environment {
         LIBLAB_TOKEN = credentials('LIBLAB_TOKEN')
-        REPO_HOST_PLATFORM = credentials('REPO_HOST_PLATFORM')
+        REPO_HOST_PLATFORM = 'github'
         LIBLAB_GITHUB_TOKEN = credentials('LIBLAB_GITHUB_TOKEN')
-        LIBLAB_BITBUCKET_TOKEN = credentials('LIBLAB_BITBUCKET_TOKEN')
-        LIBLAB_GITLAB_TOKEN = credentials('LIBLAB_GITLAB_TOKEN')
     }
     stages {
         stage('Checkout Repository') {
