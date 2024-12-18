@@ -66,6 +66,10 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
+                    // Verify Node.js and npm are installed
+                    sh 'node -v && npm -v'
+
+                    // Install liblab globally
                     sh 'npm install -g liblab'
                 }
             }
