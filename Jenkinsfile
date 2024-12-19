@@ -50,7 +50,7 @@ pipeline {
         stage('Check for File Changes') {
             steps {
                 script {
-                    def changes = sh(script: 'git diff --quiet HEAD~1 -- liblab.config.json spec/ hooks/ customPlanModifiers/ || echo "CHANGES"', returnStdout: true).trim()
+                    def changes = sh(script: 'git diff --quiet HEAD~1 -- spec.json liblab.config.json spec/ hooks/ customPlanModifiers/ || echo "CHANGES"', returnStdout: true).trim()
                     if (changes != "CHANGES") {
                         echo "No changes detected in relevant files. Skipping pipeline."
                         currentBuild.result = 'SUCCESS'
